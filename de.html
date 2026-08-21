@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BreFlo Datenschutzerklärung</title>
+  <meta name="description" content="Datenschutzerklärung für BreFlo, einen ruhigen Offline-Atembegleiter für Android." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4f8fa;
+      --ink: #142028;
+      --muted: #4a5c68;
+      --line: #d5e0e6;
+      --accent: #1a8a9c;
+      --card: #ffffff;
+      --max: 40rem;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #d7eef2 0%, transparent 55%),
+        radial-gradient(900px 420px at 100% 0%, #e8f1f4 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+    .lang {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    .lang a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .lang a[aria-current="page"] {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      font-weight: 600;
+    }
+    .lang a:hover { color: var(--accent); }
+    .brand {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(2.4rem, 6vw, 3.2rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.35rem;
+      color: var(--ink);
+    }
+    .lede {
+      margin: 0 0 2rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 34rem;
+    }
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.65rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin: 0 0 0.55rem;
+    }
+    p, li { margin: 0 0 0.7rem; color: var(--ink); }
+    p:last-child, li:last-child { margin-bottom: 0; }
+    ul { margin: 0; padding-left: 1.15rem; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="lang" aria-label="Sprache">
+      <a href="index.html">English</a>
+      <a href="de.html" aria-current="page">Deutsch</a>
+    </nav>
+
+    <p class="brand">BreFlo</p>
+    <p class="lede">Ruhiger Offline-Atembegleiter. Rhythmus, Dauer, Darstellung. Kein Konto, keine Werbung, keine Nutzungsdaten.</p>
+
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">Gültig ab 21. August 2026 · App-Paket <code>com.laartheuser.breflo</code></p>
+
+    <section>
+      <h2>Kurzfassung</h2>
+      <p>BreFlo legt kein Konto an, nutzt kein Internet und sendet keine Nutzungsdaten. Deine Techniken und Einstellungen bleiben auf diesem Gerät.</p>
+    </section>
+
+    <section>
+      <h2>Was BreFlo speichert</h2>
+      <p>Nur auf diesem Gerät (Android DataStore) kann BreFlo speichern:</p>
+      <ul>
+        <li>Atemtechniken und Sitzungsdauer</li>
+        <li>Bewegung, Farbe, Overlays, Ton und Design</li>
+        <li>Sprachwahl, wenn du die Systemsprache überschreibst</li>
+      </ul>
+      <p>Es gibt keine BreFlo-Cloud und keinen BreFlo-Server, der diese Daten empfängt.</p>
+    </section>
+
+    <section>
+      <h2>Berechtigungen</h2>
+      <p>BreFlo kann die Berechtigung <strong>VIBRATE</strong> für einen optionalen Impuls beim Phasenwechsel nutzen. Vibration lässt sich unter Ton ausschalten.</p>
+      <p>Für das Kern-Erlebnis verlangt BreFlo kein Internet, keinen Standort, keine Kontakte, kein Mikrofon, keine Kamera und keine Benachrichtigungen.</p>
+    </section>
+
+    <section>
+      <h2>Audio</h2>
+      <p>Optionale Phasen-Töne und Ambient-Schleifen kommen aus Dateien in der App und werden nicht aus dem Netz gestreamt. Ambient folgt der Medienlautstärke; Phasen-Töne folgen der Geräte-Sonification- bzw. Stumm-Politik.</p>
+    </section>
+
+    <section>
+      <h2>Android-Backup</h2>
+      <p>Wenn Android-Backup / Wiederherstellen auf dem Handy aktiv ist, können BreFlo-Einstellungen auf dasselbe Google-Konto kopiert oder nach einem Gerätewechsel wiederhergestellt werden. Das ist eine Android-Systemfunktion, kein BreFlo-Server.</p>
+    </section>
+
+    <section>
+      <h2>Kinder</h2>
+      <p>BreFlo richtet sich nicht an Kinder und erhebt wissentlich keine personenbezogenen Daten. Es gibt kein Konto und kein Remote-Profil.</p>
+    </section>
+
+    <section>
+      <h2>Hinweis zur Gesundheit</h2>
+      <p>BreFlo ist ein Atembegleiter für den Alltag. Es ist keine medizinische Beratung und kein Medizinprodukt. Es ersetzt keine fachliche Behandlung. Bei gesundheitlichen Einschränkungen frage bitte eine Ärztin oder einen Arzt, bevor du deine Atmung änderst.</p>
+    </section>
+
+    <section>
+      <h2>Änderungen</h2>
+      <p>Bei Änderungen dieser Erklärung wird das Datum oben auf dieser Seite aktualisiert. Wesentliche Änderungen erscheinen nach Möglichkeit auch in der In-App-Info.</p>
+    </section>
+
+    <section>
+      <h2>Kontakt</h2>
+      <p>Fragen zu dieser Erklärung: Issue im <a href="https://github.com/linea12/breflo">BreFlo-GitHub-Repository</a> oder Kontakt über die Publisher-Angaben im Google-Play-Eintrag von BreFlo.</p>
+    </section>
+
+    <footer>
+      <p>Diese Seite ist die gehostete Datenschutzerklärung für Play Console Data safety. Derselbe Inhalt steht in BreFlo unter Einstellungen → Info.</p>
+    </footer>
+  </main>
+</body>
+</html>
